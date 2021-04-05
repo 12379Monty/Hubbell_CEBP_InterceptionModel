@@ -1,0 +1,358 @@
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.3     ✔ purrr   0.3.4
+✔ tibble  3.0.6     ✔ dplyr   1.0.4
+✔ tidyr   1.1.2     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Iso 0.0-18.1
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  cancer_type_tfl = col_character(),
+  cstage = col_character(),
+  total_cancers = col_double(),
+  detec_cancers = col_double()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  SEER_Draw = col_character(),
+  Stage = col_character(),
+  TIME = col_character(),
+  CSS = col_double()
+)
+
+Joining, by = c("SEER_Draw", "Stage")
+Joining, by = "SEER_Draw"
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  Stage = col_character(),
+  c = col_double(),
+  n = col_double(),
+  original_sens = col_double(),
+  sens = col_double()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  SEER_Draw = col_character(),
+  Stage = col_character(),
+  IR = col_double(),
+  Survival = col_double()
+)
+
+Joining, by = c("SEER_Draw", "Stage")
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  group = col_character()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  scenario = col_double(),
+  Stage = col_character(),
+  group = col_character(),
+  dwell = col_double()
+)
+
+Joining, by = "dwell_group"
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  Stage = col_character(),
+  IR = col_double(),
+  Survival = col_double(),
+  c = col_double(),
+  n = col_double(),
+  sens = col_double()
+)
+
+[1] 1
+[1] 3
+[1] 5
+[1] 7
+Warning message:
+The `path` argument of `write_tsv()` is deprecated as of readr 1.4.0.
+Please use the `file` argument instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  group = col_character()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  scenario = col_double(),
+  Stage = col_character(),
+  group = col_character(),
+  dwell = col_double()
+)
+
+Joining, by = "dwell_group"
+`summarise()` has grouped output by 'dwell_group', 'scenario'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'scenario'. You can override using the `.groups` argument.
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  opt = col_character(),
+  Cancer = col_character(),
+  clinical = col_double(),
+  prequel = col_double(),
+  found_clinical = col_double(),
+  caught = col_double(),
+  s_survival = col_double(),
+  c_survival = col_double(),
+  original_survivors = col_double(),
+  shifted_survivors = col_double(),
+  original_deaths = col_double(),
+  shifted_deaths = col_double(),
+  screen_interval = col_double(),
+  dw_scenario = col_double(),
+  scan = col_character(),
+  mode_found = col_character(),
+  aggressive = col_character()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  scenario = col_double(),
+  Stage = col_character(),
+  dwell_range = col_character(),
+  aggressive = col_character()
+)
+
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+Joining, by = "aggressive"
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+Joining, by = c("scan", "aggressive", "scenario_zero")
+Joining, by = c("scan", "aggressive", "scenario_zero")
+Joining, by = c("scan", "aggressive")
+Joining, by = c("scenario_zero", "scan")
+Joining, by = c("scenario_zero", "scan")
+Joining, by = "outcome"
+Joining, by = "outcome"
+`summarise()` has grouped output by 'scan', 'aggressive', 'mode_found'. You can override using the `.groups` argument.
+Loading required package: shape
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  group = col_character()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  scenario = col_double(),
+  Stage = col_character(),
+  group = col_character(),
+  dwell = col_double()
+)
+
+Joining, by = "dwell_group"
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  Stage = col_character(),
+  IR = col_double(),
+  Survival = col_double(),
+  c = col_double(),
+  n = col_double(),
+  sens = col_double()
+)
+
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("prequel", "shape", "state")
+Joining, by = c("box_state_start", "prequel_start")
+Joining, by = c("box_state_end", "prequel_end")
+Joining, by = c("box_id_start", "box_id_end")
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("prequel", "shape", "state")
+Joining, by = c("box_state_start", "prequel_start")
+Joining, by = c("box_state_end", "prequel_end")
+Joining, by = c("box_id_start", "box_id_end")
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("prequel", "shape", "state")
+Joining, by = c("box_state_start", "prequel_start")
+Joining, by = c("box_state_end", "prequel_end")
+Joining, by = c("box_id_start", "box_id_end")
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  opt = col_character(),
+  Cancer = col_character(),
+  clinical = col_double(),
+  prequel = col_double(),
+  found_clinical = col_double(),
+  caught = col_double(),
+  s_survival = col_double(),
+  c_survival = col_double(),
+  original_survivors = col_double(),
+  shifted_survivors = col_double(),
+  original_deaths = col_double(),
+  shifted_deaths = col_double(),
+  screen_interval = col_double(),
+  dw_scenario = col_double(),
+  scan = col_character(),
+  mode_found = col_character(),
+  aggressive = col_character()
+)
+
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("Cancer", "Stage")
+`summarise()` has grouped output by 'case'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'mode_found', 'clinical'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'event'. You can override using the `.groups` argument.
+Joining, by = c("event", "Status")
+`summarise()` has grouped output by 'event'. You can override using the `.groups` argument.
+Joining, by = c("event", "Status")
+Warning message:
+The `.dots` argument of `group_by()` is deprecated as of dplyr 1.0.0.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  Stage = col_character(),
+  IR = col_double(),
+  Survival = col_double(),
+  c = col_double(),
+  n = col_double(),
+  sens = col_double()
+)
+
+Joining, by = "Cancer"
+Joining, by = "Cancer"
+Joining, by = "Cancer"
+Warning messages:
+1: Removed 10 rows containing missing values (geom_point). 
+2: Removed 8 row(s) containing missing values (geom_path). 
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Cancer = col_character(),
+  Stage = col_character(),
+  IR = col_double(),
+  Survival = col_double(),
+  c = col_double(),
+  n = col_double(),
+  sens = col_double()
+)
+
+Joining, by = "dummy"
+Joining, by = "dummy"
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  opt = col_character(),
+  Cancer = col_character(),
+  clinical = col_double(),
+  prequel = col_double(),
+  found_clinical = col_double(),
+  caught = col_double(),
+  s_survival = col_double(),
+  c_survival = col_double(),
+  original_survivors = col_double(),
+  shifted_survivors = col_double(),
+  original_deaths = col_double(),
+  shifted_deaths = col_double(),
+  screen_interval = col_double(),
+  dw_scenario = col_double(),
+  scan = col_character(),
+  mode_found = col_character(),
+  aggressive = col_character()
+)
+
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  scenario = col_double(),
+  Stage = col_character(),
+  dwell_range = col_character(),
+  aggressive = col_character()
+)
+
+Joining, by = "Cancer"
+Joining, by = "Cancer"
+Joining, by = "opt"
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+Joining, by = "aggressive"
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'scan'. You can override using the `.groups` argument.
+Joining, by = c("scan", "aggressive", "scenario_zero")
+Joining, by = c("scan", "aggressive", "scenario_zero")
+Joining, by = c("scan", "aggressive")
+Joining, by = c("scenario_zero", "scan")
+Joining, by = c("scenario_zero", "scan")
+Joining, by = "outcome"
+Joining, by = "outcome"
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  opt = col_character(),
+  Cancer = col_character(),
+  clinical = col_double(),
+  prequel = col_double(),
+  found_clinical = col_double(),
+  caught = col_double(),
+  s_survival = col_double(),
+  c_survival = col_double(),
+  original_survivors = col_double(),
+  shifted_survivors = col_double(),
+  original_deaths = col_double(),
+  shifted_deaths = col_double(),
+  screen_interval = col_double(),
+  dw_scenario = col_double(),
+  scan = col_character(),
+  mode_found = col_character(),
+  aggressive = col_character()
+)
+
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("Cancer", "Stage")
+`summarise()` has grouped output by 'case'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("Cancer", "Stage")
+`summarise()` has grouped output by 'case'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("Cancer", "Stage")
+`summarise()` has grouped output by 'case'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Cancer'. You can override using the `.groups` argument.
+Joining, by = c("Cancer", "Stage")
+`summarise()` has grouped output by 'case'. You can override using the `.groups` argument.
+
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  .default = col_double(),
+  scan = col_character(),
+  aggressive = col_character(),
+  scenario_zero = col_character()
+)
+ℹ Use `spec()` for the full column specifications.
+
+Joining, by = c("scan", "aggressive")

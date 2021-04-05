@@ -1,0 +1,3 @@
+# See README.md
+nohup Rscript scripts/00_coordination_script.R > 00_coordination_script.log &
+
